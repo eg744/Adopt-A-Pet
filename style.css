@@ -1,0 +1,136 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+:root {
+   --gap: 2em;
+}
+
+body {
+   margin: 0;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+
+   overflow-x: hidden;
+}
+/* Helper functions */
+
+/* Default list */
+.list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+/* Basic flex */
+.flex {
+   display: flex;
+   gap: var(--gap, 2rem);
+}
+
+.primary-header {
+   width: 100%;
+   margin: 0 auto;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.mobile-nav-toggle {
+   display: none;
+}
+
+.primary-navigation {
+   margin: 1em;
+   background: hsl(0 0% 0% / 0.75);
+}
+
+/* Backdrop-filter not always supported in firefox */
+@supports (backdrop-filter: blur(1rem)) {
+   .primary-navigation {
+      background: hsl(0 0% 100% / 0.1);
+      backdrop-filter: blur(1rem);
+   }
+}
+
+.primary-navigation a {
+   text-decoration: none;
+   font-size: 1.5rem;
+}
+
+/* Mobile menu button */
+
+.bar1,
+.bar2,
+.bar3 {
+   width: 2.7rem;
+   height: 0.4rem;
+   background-color: #333;
+   margin: 0.3rem;
+   transition: 0.3s;
+}
+
+/* Rotate bars, fade second */
+.change .bar1 {
+   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+   transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+   opacity: 0;
+}
+.change .bar3 {
+   -webkit-transform: rotate(45deg) translate(-8px, -8px);
+   transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Mobile */
+@media (max-width: 35em) {
+   .primary-navigation {
+      --gap: 2em;
+
+      z-index: 1000;
+      position: fixed;
+      inset: 0 0 0 30%;
+      flex-direction: column;
+      padding: min(30vh, 10rem) 2em;
+
+      /* Off screen */
+      transform: translateX(105%);
+
+      transition: transform 300ms ease-in-out;
+   }
+
+   /* Navigation Visible on mobile */
+   .primary-navigation[data-visible='true'] {
+      transform: translateX(5%);
+   }
+
+   .mobile-nav-toggle {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      /* Highest layer */
+      z-index: 9999;
+      border: 0;
+      width: 2rem;
+      top: 2rem;
+      right: 3rem;
+   }
+}
+
+@media (min-width: 35em) and (max-width: 55em) {
+   .primary-navigation a > span[aria-hidden] {
+      display: none;
+   }
+}
+
+@media (min-width: 35em) {
+   .primary-navigation {
+      padding-block: 1rem;
+      padding-inline: clamp(3rem, 5vw, 10rem);
+   }
+}
+
+header {
+   background: linear-gradient(rgb(14, 63, 106), rgb(24, 109, 189));
+}
