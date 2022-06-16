@@ -1,0 +1,23 @@
+{
+   "name": "adopt-a-pet",
+   "version": "1.0.0",
+   "description": "Website containing information about pets available for adoption",
+   "main": "script.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/eg744/Adopt-A-Pet.git"
+   },
+   "keywords": [],
+   "author": "Elijah Gillit",
+   "license": "MIT",
+   "bugs": {
+      "url": "https://github.com/eg744/Adopt-A-Pet/issues"
+   },
+   "homepage": "https://github.com/eg744/Adopt-A-Pet#readme",
+   "dependencies": {
+      "express": "^4.18.1"
+   }
+}
