@@ -5,6 +5,8 @@
 }
 :root {
    --gap: 2em;
+   --blue-start: rgb(14, 63, 106);
+   --blue-end: rgb(24, 109, 189);
 }
 
 body {
@@ -132,5 +134,5 @@ body {
 }
 
 header {
-   background: linear-gradient(rgb(14, 63, 106), rgb(24, 109, 189));
+   background: linear-gradient(--blue-start, --blue-end);
 }
