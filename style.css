@@ -60,6 +60,25 @@ body {
    font-size: 1.5rem;
 }
 
+/* Dropdown menu */
+.primary-navigation span {
+   border: none;
+   color: inherit;
+   font-family: inherit;
+   cursor: pointer;
+   padding: 0;
+}
+.primary-navigation span:hover {
+   color: black;
+}
+.dropdown {
+   position: relative;
+}
+.dropdown-menu {
+   position: absolute;
+   
+}
+
 /* Mobile menu button */
 
 .bar1,
@@ -134,5 +153,5 @@ body {
 }
 
 header {
-   background: linear-gradient(--blue-start, --blue-end);
+   background: linear-gradient(var(--blue-start), var(--blue-end));
 }
