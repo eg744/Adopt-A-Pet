@@ -16,7 +16,7 @@ body {
 
    overflow-x: hidden;
 }
-/* Helper functions */
+/* ==Helper functions== */
 
 /* Default list */
 .list {
@@ -43,7 +43,7 @@ body {
 }
 
 .primary-navigation {
-   margin: 1em;
+   margin: 1.5em;
    background: hsl(0 0% 0% / 0.75);
 }
 
@@ -58,25 +58,6 @@ body {
 .primary-navigation a {
    text-decoration: none;
    font-size: 1.5rem;
-}
-
-/* Dropdown menu */
-.primary-navigation span {
-   border: none;
-   color: inherit;
-   font-family: inherit;
-   cursor: pointer;
-   padding: 0;
-}
-.primary-navigation span:hover {
-   color: black;
-}
-.dropdown {
-   position: relative;
-}
-.dropdown-menu {
-   position: absolute;
-   
 }
 
 /* Mobile menu button */
@@ -151,7 +132,27 @@ body {
       padding-inline: clamp(3rem, 5vw, 10rem);
    }
 }
-
+/*
+/* Dropdown menu 
+   .primary-navigation span {
+      border: none;
+      color: inherit;
+      font-family: inherit;
+      cursor: pointer;
+      padding: 0;
+   }
+   .primary-navigation span:hover {
+      color: black;
+   }
+   .dropdown {
+      position: relative;
+   }
+   .dropdown-menu {
+      position: absolute;
+      left: 0;
+      top: calc(100% + 0.25rem);
+   }
+   */
 header {
    background: linear-gradient(var(--blue-start), var(--blue-end));
 }
