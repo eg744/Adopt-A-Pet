@@ -11,7 +11,7 @@
          href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
          rel="stylesheet"
       />
-      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="css/style.css" />
    </head>
    <body class="home">
       <header class="primary-header flex">
@@ -46,10 +46,12 @@
                   <a href="#home"><span aria-hidden="true">Home</span></a>
                </li>
                <li>
-                  <a href="#pets"
-                     ><span aria-hidden="true">Find Your Friend</span></a
-                  >
-                  >
+                  <div class="dropdown">
+                     <a href="#pets"
+                        ><span aria-hidden="true">Find A Friend</span></a
+                     >
+                     <div class="dropdown-menu">content</div>
+                  </div>
                </li>
                <li>
                   <a href="#contact"><span aria-hidden="true">Contact</span></a>
@@ -77,6 +79,6 @@
          </div>
       </section>
 
-      <script src="script.js"></script>
+      <script src="index.js"></script>
    </body>
 </html>

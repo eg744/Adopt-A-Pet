@@ -120,11 +120,12 @@ body {
    }
 }
 
+/* Unsure if I want this, navbar content disappears at smaller and reappears at larger screen sizes
 @media (min-width: 35em) and (max-width: 55em) {
    .primary-navigation a > span[aria-hidden] {
       display: none;
    }
-}
+} */
 
 @media (min-width: 35em) {
    .primary-navigation {
@@ -132,27 +133,26 @@ body {
       padding-inline: clamp(3rem, 5vw, 10rem);
    }
 }
-/*
-/* Dropdown menu 
-   .primary-navigation span {
-      border: none;
-      color: inherit;
-      font-family: inherit;
-      cursor: pointer;
-      padding: 0;
-   }
-   .primary-navigation span:hover {
-      color: black;
-   }
-   .dropdown {
-      position: relative;
-   }
-   .dropdown-menu {
-      position: absolute;
-      left: 0;
-      top: calc(100% + 0.25rem);
-   }
-   */
+
+.primary-navigation span {
+   border: none;
+   color: inherit;
+   font-family: inherit;
+   cursor: pointer;
+   padding: 0;
+}
+.primary-navigation span:hover {
+   color: black;
+}
+.dropdown {
+   position: relative;
+}
+.dropdown-menu {
+   position: absolute;
+   left: 0;
+   top: calc(100% + 0.25rem);
+}
+
 header {
    background: linear-gradient(var(--blue-start), var(--blue-end));
 }
