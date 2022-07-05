@@ -4,7 +4,7 @@
    "description": "Website containing information about pets available for adoption",
    "main": "script.js",
    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "start": "node index"
    },
    "repository": {
       "type": "git",
@@ -18,7 +18,6 @@
    },
    "homepage": "https://github.com/eg744/Adopt-A-Pet#readme",
    "dependencies": {
-      "express": "^4.18.1",
-      "jsdom": "^20.0.0"
+      "express": "^4.18.1"
    }
 }

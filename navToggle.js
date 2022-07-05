@@ -1,4 +1,4 @@
-function mobileNavToggle() {
+export function mobileNavToggle() {
    document.addEventListener('DOMContentLoaded', () => {
       const primaryNavBar = document.querySelector('.primary-navigation');
 
