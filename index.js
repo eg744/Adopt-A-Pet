@@ -1,6 +1,3 @@
-// const { JSDOM } = jsdom;
-// GLOBAL.document = new JSDOM(html).window.document;
-
 // Express routing https://expressjs.com/en/api.html
 const express = require('express');
 // const jsdom = require('jsdom');
